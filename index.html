@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покерный тренажер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#trainer">Тренажер</a></li>
+                <li><a href="#solutions">Решения</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Тренажер -->
+        <section id="trainer">
+            <h1>Покерный тренажер</h1>
+            <div class="trainer-interface">
+                <button id="start-button">Начать тренировку</button>
+            </div>
+        </section>
+
+        <!-- Решения -->
+        <section id="solutions">
+            <h1>Решения раздач</h1>
+            <div class="solution-upload">
+                <label for="hand-upload">Загрузить раздачу</label>
+                <input type="file" id="hand-upload" accept=".txt, .json">
+                <button id="analyze-button">Анализировать</button>
+                <div id="analysis-result">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Покерный тренажер © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
